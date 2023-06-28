@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Assignment 1</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample1"
+          aria-expanded="false"
+          aria-controls="collapseExample1"
+        >
+          1- Write a program that allow user to enter number then print it
+        </button>
+
+        <div class="collapse" id="collapseExample1">
+          <div class="card text-center">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number1"
+                  placeholder=" "
+                />
+                <label for="number1">Please Enter A Number</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction1()"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="card-footer text-body-secondary bg-danger" id="result1">
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample2"
+          aria-expanded="false"
+          aria-controls="collapseExample2"
+        >
+          2- Write a program that take number from user then print yes if that
+          number can divide by 3 and 4 otherwise print no
+        </button>
+        <div class="card text-center">
+          <!-- <div class="card-header bg-dark text-white">
+            2- Write a program that take number from user then print yes if that
+            number can divide by 3 and 4 otherwise print no
+          </div> -->
+          <div class="collapse" id="collapseExample2">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number2"
+                  placeholder=" "
+                />
+                <label for="number2">Please Enter A Number</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction2()"
+              >
+                Submit
+              </button>
+            </div>
+
+            <div class="card-footer text-body-secondary bg-danger" id="result2">
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample3"
+          aria-expanded="false"
+          aria-controls="collapseExample3"
+        >
+          3- Write a program that allows the user to insert 2 integers then
+          print the max
+        </button>
+        <div class="card text-center">
+          <!-- <div class="card-header bg-dark text-white">
+            3- Write a program that allows the user to insert 2 integers then
+            print the max
+          </div> -->
+          <div class="collapse" id="collapseExample3">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number3inp1"
+                  placeholder=" "
+                />
+                <label for="number3inp1">Please Enter First Number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number3inp2"
+                  placeholder=" "
+                />
+                <label for="number3inp2">Please Enter Second Number</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction3()"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="card-footer text-body-secondary bg-danger" id="result3">
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample4"
+          aria-expanded="false"
+          aria-controls="collapseExample4"
+        >
+          4- Write a program that allows the user to insert an integer then
+          print negative if it is negative number otherwise print positive.
+        </button>
+        <div class="card text-center">
+          <!-- <div class="card-header bg-dark text-white">
+            4- Write a program that allows the user to insert an integer then
+            print negative if it is negative number otherwise print positive.
+          </div> -->
+          <div class="collapse" id="collapseExample4">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number4"
+                  placeholder=" "
+                />
+                <label for="number4">Please Enter A Number</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction4()"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="card-footer text-body-secondary bg-danger" id="result4">
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample5"
+          aria-expanded="false"
+          aria-controls="collapseExample5"
+        >
+          5- Write a program that take 3 integers from user then print the max
+          element and the min element.
+        </button>
+        <div class="card text-center">
+          <!-- <div class="card-header bg-dark text-white">
+            3- Write a program that allows the user to insert 2 integers then
+            print the max
+          </div> -->
+          <div class="collapse" id="collapseExample5">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number5inp1"
+                  placeholder=" "
+                />
+                <label for="number5inp1">Please Enter First Number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number5inp2"
+                  placeholder=" "
+                />
+                <label for="number5inp2">Please Enter Second Number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number5inp3"
+                  placeholder=" "
+                />
+                <label for="number5inp3">Please Enter Third Number</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction5()"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="card-footer text-body-secondary bg-danger" id="result5">
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample6"
+          aria-expanded="false"
+          aria-controls="collapseExample6"
+        >
+          6- Write a program that allows the user to insert integer number then
+          check If a number is even or odd
+        </button>
+        <div class="card text-center">
+          <div class="collapse" id="collapseExample6">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number6"
+                  placeholder=" "
+                />
+                <label for="number6">Please Enter A Number</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction6()"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="card-footer text-body-secondary bg-danger" id="result6">
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample7"
+          aria-expanded="false"
+          aria-controls="collapseExample7"
+        >
+          7- Write a program that take character from user then if it is vowel
+          chars (a,e,I,o,u) then print vowel otherwise print consonant
+        </button>
+        <div class="card text-center">
+          <!-- <div class="card-header bg-dark text-white">
+            3- Write a program that allows the user to insert 2 integers then
+            print the max
+          </div> -->
+          <div class="collapse" id="collapseExample7">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="number7"
+                  maxlength="1"
+                  pattern="[A-Za-z]"
+                  placeholder=" "
+                  onkeypress="return (event.charCode > 64 && 
+                  event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+                />
+                <label for="number7">Please Enter A Character</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction7()"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="card-footer text-body-secondary bg-danger" id="result7">
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample8"
+          aria-expanded="false"
+          aria-controls="collapseExample8"
+        >
+          8- Write a program that allows user to insert integer then print all
+          numbers between 1 to that number
+        </button>
+        <div class="card text-center">
+          <div class="collapse" id="collapseExample8">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number8"
+                  placeholder=" "
+                />
+                <label for="number8">Please Enter A Number</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction8()"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="card-footer text-body-secondary bg-danger" id="result8">
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample9"
+          aria-expanded="false"
+          aria-controls="collapseExample9"
+        >
+          9- Write a program that allows user to insert integer then print a
+          multiplication table up to 12.
+        </button>
+        <div class="card text-center">
+          <div class="collapse" id="collapseExample9">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number9"
+                  placeholder=" "
+                />
+                <label for="number9">Please Enter A Number</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction9()"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="card-footer text-body-secondary bg-danger" id="result9">
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample10"
+          aria-expanded="false"
+          aria-controls="collapseExample10"
+        >
+          10- Write a program that allows user to insert number then print all
+          even numbers between 1 to this number
+        </button>
+        <div class="card text-center">
+          <div class="collapse" id="collapseExample10">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number10"
+                  placeholder=" "
+                />
+                <label for="number10">Please Enter A Number</label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction10()"
+              >
+                Submit
+              </button>
+            </div>
+            <div
+              class="card-footer text-body-secondary bg-danger"
+              id="result10"
+            >
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample11"
+          aria-expanded="false"
+          aria-controls="collapseExample11"
+        >
+          11- Write a program that take two integers then print the power
+        </button>
+        <div class="card text-center">
+          <div class="collapse" id="collapseExample11">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number11inp1"
+                  placeholder=" "
+                />
+                <label for="number11inp1">Please Enter A Number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number11inp2"
+                  placeholder=" "
+                />
+                <label for="number11inp2"
+                  >Please Enter The Exponent of The Number</label
+                >
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction11()"
+              >
+                Submit
+              </button>
+            </div>
+            <div
+              class="card-footer text-body-secondary bg-danger"
+              id="result11"
+            >
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample12"
+          aria-expanded="false"
+          aria-controls="collapseExample12"
+        >
+          12- Write a program to enter marks of five subjects and calculate
+          total, average and percentage.
+        </button>
+        <div class="card text-center">
+          <div class="collapse" id="collapseExample12">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="number12"
+                  placeholder=" "
+                />
+                <label for="number12"
+                  >Enter the marks for all five subjects, separated by
+                  commas:</label
+                >
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction12()"
+              >
+                Submit
+              </button>
+            </div>
+            <div
+              class="card-footer text-body-secondary bg-danger"
+              id="result12"
+            >
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <button
+          class="btn btn-primary w-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample13"
+          aria-expanded="false"
+          aria-controls="collapseExample13"
+        >
+          13- Write a program to input month number and print number of days in
+          that month.
+        </button>
+        <div class="card text-center">
+          <div class="collapse" id="collapseExample13">
+            <div class="card-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number13"
+                  placeholder=" "
+                />
+                <label for="number13">Please Enter Month Number </label>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="myFunction13()"
+              >
+                Submit
+              </button>
+            </div>
+            <div
+              class="card-footer text-body-secondary bg-danger"
+              id="result13"
+            >
+              Result will Appear Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
