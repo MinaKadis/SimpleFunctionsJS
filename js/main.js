@@ -390,3 +390,46 @@ function myFunction13() {
       .setAttribute("class", "card-footer text-body-secondary bg-success");
   }
 }
+
+// 14- Write a program to input marks of five subjects Physics,Chemistry, Biology, Mathematics and Computer, Find percentage and grade
+function myFunction14() {
+  const marks = [];
+
+  const subjects = [
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Mathematics",
+    "Computer",
+  ];
+
+  for (let i = 0; i < subjects.length; i++) {
+    const subject = subjects[i];
+    const marksInput = prompt(`Enter ${subject} marks:`);
+    marks.push(parseFloat(marksInput));
+  }
+
+  const percentage = calculatePercentage(marks);
+  const grade = assignGrade(percentage);
+  document.getElementById("result14").innerHTML =
+    " Percentage : " + percentage + " %" + "<br>" + "Grade : " + grade;
+  document
+    .getElementById("result14")
+    .setAttribute("class", "card-footer text-body-secondary bg-success");
+}
+
+function calculatePercentage(marks) {
+  const totalMarks = 500;
+  const obtainedMarks = marks.reduce((sum, mark) => sum + mark, 0);
+
+  return (obtainedMarks / totalMarks) * 100;
+}
+
+function assignGrade(percentage) {
+  if (percentage >= 90) return "A";
+  if (percentage >= 80) return "B";
+  if (percentage >= 70) return "C";
+  if (percentage >= 60) return "D";
+  if (percentage >= 40) return "E";
+  return "F";
+}
