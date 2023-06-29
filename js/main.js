@@ -433,3 +433,59 @@ function assignGrade(percentage) {
   if (percentage >= 40) return "E";
   return "F";
 }
+
+//******************************** Using switch case*******************************
+
+//15- Write a program to print total number of days in month
+function myFunction15() {
+  let month = document.getElementById("number15").value;
+  let daysInMonth = getDaysInMonth(month.toLowerCase());
+
+  if (daysInMonth === -1) {
+    document.getElementById("result15").innerHTML =
+      " The Result is : " + "Please Insert Correct Month Name";
+    document
+      .getElementById("result15")
+      .setAttribute("class", "card-footer text-body-secondary bg-info");
+  } else {
+    document.getElementById("result15").innerHTML = `The month of ${
+      month.charAt(0).toUpperCase() + month.slice(1)
+    } has ${daysInMonth} days.`;
+    document
+      .getElementById("result15")
+      .setAttribute("class", "card-footer text-body-secondary bg-success");
+  }
+}
+
+function getDaysInMonth(month) {
+  let days;
+
+  switch (month) {
+    case "january":
+    case "march":
+    case "may":
+    case "july":
+    case "august":
+    case "october":
+    case "december":
+      days = 31;
+      break;
+
+    case "april":
+    case "june":
+    case "september":
+    case "november":
+      days = 30;
+      break;
+
+    case "february":
+      days = 28;
+      break;
+
+    default:
+      days = -1;
+      break;
+  }
+
+  return days;
+}
