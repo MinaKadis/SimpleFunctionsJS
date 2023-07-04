@@ -570,7 +570,7 @@ function findEvenOrOdd(numb) {
   }
 }
 
-// 19 - Write a program to check whether a number is even or odd
+// 19 -  Write a program to check whether a number is positive or negative or zero
 
 function myFunction19() {
   debugger;
