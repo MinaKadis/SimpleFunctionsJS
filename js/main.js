@@ -146,7 +146,8 @@ function myFunction7() {
       .getElementById("result7")
       .setAttribute("class", "card-footer text-body-secondary bg-success");
   } else {
-    document.getElementById("result7").innerHTML = "Your Number is : Consonant";
+    document.getElementById("result7").innerHTML =
+      "Your Character is : Consonant";
     document
       .getElementById("result7")
       .setAttribute("class", "card-footer text-body-secondary bg-warning");
@@ -488,4 +489,160 @@ function getDaysInMonth(month) {
   }
 
   return days;
+}
+
+//16-  Write a program to check whether an alphabet is vowel or consonant
+
+function myFunction16() {
+  debugger;
+  var alphabet = document.getElementById("number16").value;
+
+  switch (alphabet.toLowerCase()) {
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+      //console.log(alphabet + " is a vowel.");
+      document.getElementById(
+        "result16"
+      ).innerHTML = `Your Character: ${alphabet} is  Vowel`;
+      document
+        .getElementById("result16")
+        .setAttribute("class", "card-footer text-body-secondary bg-success");
+      break;
+    default:
+      //console.log(alphabet + " is a consonant.");
+      document.getElementById(
+        "result16"
+      ).innerHTML = `Your Character: ${alphabet} is  Consonant`;
+      document
+        .getElementById("result16")
+        .setAttribute("class", "card-footer text-body-secondary bg-warning");
+      break;
+  }
+}
+
+// 17-  Write a program to find maximum between two numbers
+function myFunction17() {
+  debugger;
+  var number1 = +document.getElementById("number17inp1").value;
+  var number2 = +document.getElementById("number17inp2").value;
+
+  var result = findMaximum(number1, number2);
+
+  document.getElementById("result17").innerHTML = result;
+  document
+    .getElementById("result17")
+    .setAttribute("class", "card-footer text-body-secondary bg-success");
+}
+
+function findMaximum(num1, num2) {
+  debugger;
+  switch (true) {
+    case num1 > num2:
+      return `First Number: ${num1} is Greater than Second Number: ${num2}`;
+    case num2 > num1:
+      return `Second Number: ${num2} is Greater than First Number: ${num1}`;
+    default:
+      return `${num1} is Equal to ${num2} (First Number And Second Number Are Equals)`;
+  }
+}
+
+// 18 - Write a program to check whether a number is even or odd
+function myFunction18() {
+  debugger;
+  var number = +document.getElementById("number18").value;
+  var result = findEvenOrOdd(number);
+  document.getElementById("result18").innerHTML = result;
+  document
+    .getElementById("result18")
+    .setAttribute("class", "card-footer text-body-secondary bg-success");
+}
+
+function findEvenOrOdd(numb) {
+  debugger;
+  switch (true) {
+    case numb % 2 === 0:
+      return `Your Number: ${numb} is EVEN`;
+    default:
+      return `Your Number: ${numb} is ODD`;
+  }
+}
+
+// 19 - Write a program to check whether a number is even or odd
+
+function myFunction19() {
+  debugger;
+  var number = +document.getElementById("number19").value;
+  var result = findPosOrNeg(number);
+  document.getElementById("result19").innerHTML = result;
+  document
+    .getElementById("result19")
+    .setAttribute("class", "card-footer text-body-secondary bg-success");
+}
+
+function findPosOrNeg(numb) {
+  debugger;
+  switch (true) {
+    case numb > 0:
+      return `Your Number: ${numb} is Positive`;
+    case numb < 0:
+      return `Your Number: ${numb} is Negative`;
+    default:
+      return `Your Number: ${numb} is Zero`;
+  }
+}
+
+// 20 -  Write a program to create Simple Calculator
+function myFunction20() {
+  debugger;
+  var operation = document.getElementById("number20inp1").value;
+  var number1 = +document.getElementById("number20inp2").value;
+  var number2 = +document.getElementById("number20inp3").value;
+
+  var result = simpleCalculator(operation, number1, number2);
+
+  document.getElementById(
+    "result20"
+  ).innerHTML = `The Result of ${number1} ${operation} ${number2} = ${result}`;
+  document
+    .getElementById("result20")
+    .setAttribute("class", "card-footer text-body-secondary bg-success");
+}
+
+function simpleCalculator(operation, num1, num2) {
+  debugger;
+  switch (operation) {
+    case "+":
+      return add(num1, num2);
+    case "-":
+      return subtract(num1, num2);
+    case "*":
+      return multiply(num1, num2);
+    case "/":
+      return divide(num1, num2);
+    default:
+      return "Invalid operation";
+  }
+}
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+function divide(num1, num2) {
+  if (num2 !== 0) {
+    return num1 / num2;
+  } else {
+    return "Cannot divide by zero!";
+  }
 }
